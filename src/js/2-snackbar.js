@@ -5,8 +5,8 @@ const form = document.querySelector('.form');
 const delayInput = form.querySelector('input[name="delay"]');
 const radioButtons = form.querySelectorAll('input[name="state"]');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); 
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); 
 
   const delay = Number(delayInput.value); 
   const state = document.querySelector('input[name="state"]:checked').value; 
